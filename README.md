@@ -10,3 +10,5 @@ Membuat project menampilkan nama
 - Membuat project menentukan ganjil genap
 
 # Pertemuan Ke 9
+- Membuat project menampilkan nim, nama, kampus
+- Mempelajari list view
