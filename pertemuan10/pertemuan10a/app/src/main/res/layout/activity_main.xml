@@ -10,31 +10,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="BUAT FILE"
-        android:onClick="EbuatFile"/>
+        android:onClick="buatFile"/>
 
     <Button
         android:id="@+id/bUbah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="UBAH FILE"
-        android:onClick="EubahFile"/>
+        android:onClick="ubahFile"/>
 
     <Button
         android:id="@+id/bBaca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="BACA FILE"
-        android:onClick="EbacaFile"/>
+        android:onClick="bacaFile"/>
 
     <Button
         android:id="@+id/bHapus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="HAPUS FILE"
-        android:onClick="EhapusFile"/>
+        android:onClick="hapusFile"/>
 
     <TextView
-        android:id="@+id/textBacaE"
+        android:id="@+id/textBaca"
         android:layout_width="match_parent"
         android:layout_height="210dp"
         android:padding="5dp"

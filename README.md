@@ -34,3 +34,6 @@ Membuat project menampilkan nama
 # Pertemuan Ke 9
 - Membuat project menampilkan nim, nama, kampus
 - Mempelajari list view
+
+# Pertemuan Ke 10
+- Internal Storage dan External Storage
