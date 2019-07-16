@@ -1,4 +1,4 @@
-package com.example.pertemuan10b;
+package com.example.pertemuan11a;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.pertemuan10b", appContext.getPackageName());
+        assertEquals("com.example.pertemuan11a", appContext.getPackageName());
     }
 }

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name to store in SQLite"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="15sp"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:layout_margin="5sp"/>
+
+    <Button
+        android:id="@+id/btnstore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STORE"
+        android:layout_margin="5sp"/>
+
+    <Button
+        android:id="@+id/btnget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET ALL NAMES FROM SQLITE"
+        android:layout_margin="5sp"/>
+
+    <TextView
+        android:id="@+id/tvnames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
