@@ -40,3 +40,6 @@ Membuat project menampilkan nama
 
 # Pertemuan Ke 11
 - SQL Lite
+
+# Pertemuan Ke 12
+- 
