@@ -42,4 +42,4 @@ Membuat project menampilkan nama
 - SQLite
 
 # Pertemuan Ke 12
--SQLite
+- Apliaksi SQLite
