@@ -39,7 +39,7 @@ Membuat project menampilkan nama
 - Internal Storage dan External Storage
 
 # Pertemuan Ke 11
-- SQL Lite
+- SQLite
 
 # Pertemuan Ke 12
-- 
+-SQLite
