@@ -43,3 +43,10 @@ Membuat project menampilkan nama
 
 # Pertemuan Ke 12
 - Apliaksi SQLite
+
+# Pertemuan Ke 13
+- pretest
+- Aplikasi API SQL
+
+# Pertemuan Ke 14
+- menyambung Aplikasi API SQL pada pertemuan 13
