@@ -19,6 +19,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     == PackageManager.PERMISSION_GRANTED) {
                 return true;
             } else {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE_STORAGE);
+                ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE_STORAGE);
                 return false;
             }
         } else {
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-            SimpleAdapter simpleAdapter = new SimpleAdapter(this, itemDataList, android.R.layout.simple_list_item_2,
+            SimpleAdapter simpleAdapter = new SimpleAdapter(MainActivity.this, itemDataList, android.R.layout.simple_list_item_2,
                     new String[]{"name", "date"}, new int[]{android.R.id.text1, android.R.id.text2});
             listView.setAdapter(simpleAdapter);
             simpleAdapter.notifyDataSetChanged();
@@ -139,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_tambah:
-                Intent intent = new Intent(this, InsertAndViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, InsertAndViewActivity.class);
                 startActivity(intent);
                 break;
         }
@@ -148,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void tampilkanDialogKonfirmasiHapusCatatan(final String filename) {
-        new AlertDialog.Builder(this)
+        new AlertDialog.Builder(MainActivity.this)
                 .setTitle("Hapus Catatan ini?")
                 .setMessage("Apakah Anda yakin ingin menghapus Catatan " + filename + "?")
                 .setIcon(android.R.drawable.ic_dialog_alert)

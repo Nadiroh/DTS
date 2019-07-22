@@ -50,3 +50,6 @@ Membuat project menampilkan nama
 
 # Pertemuan Ke 14
 - menyambung Aplikasi API SQL pada pertemuan 13
+
+# Pertemuan Ke 15
+- Teori Cellular Vulnerabilities n

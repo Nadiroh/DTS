@@ -72,6 +72,7 @@
             android:textAllCaps="false"
             android:textColor="#FFF"
             android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="Simpan"/>
     </LinearLayout>
 </LinearLayout>

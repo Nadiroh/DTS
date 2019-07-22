@@ -3,9 +3,9 @@ package kominfo.go.id.storage.proyek1;
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Environment;
-import android.preference.DialogPreference;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
@@ -49,7 +49,7 @@ public class InsertAndViewActivity extends AppCompatActivity implements View.OnC
         edtContent = findViewById(R.id.editContent);
         btnSimpan = findViewById(R.id.btnSimpan);
 
-        btnSimpan.setOnClickListener(this);
+        btnSimpan.setOnClickListener(InsertAndViewActivity.this);
 
         Bundle extras = getIntent().getExtras();
 
@@ -72,8 +72,8 @@ public class InsertAndViewActivity extends AppCompatActivity implements View.OnC
     }
 
     @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.btnSimpan:
                 eventID = 2;
                 if (!tempCatatan.equals(edtContent.getText().toString())) {
@@ -95,7 +95,7 @@ public class InsertAndViewActivity extends AppCompatActivity implements View.OnC
                     == PackageManager.PERMISSION_GRANTED) {
                 return true;
             } else {
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE_STORAGE);
+                ActivityCompat.requestPermissions(InsertAndViewActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_CODE_STORAGE);
                 return false;
             }
         } else {
