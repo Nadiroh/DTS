@@ -52,4 +52,8 @@ Membuat project menampilkan nama
 - menyambung Aplikasi API SQL pada pertemuan 13
 
 # Pertemuan Ke 15
-- Teori Cellular Vulnerabilities n
+- Teori Cellular Vulnerabilities
+- pretest
+
+# Pertemuan Ke 16
+- Teori Menentukan Mobile Seluler Network
