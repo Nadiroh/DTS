@@ -56,4 +56,4 @@ Membuat project menampilkan nama
 - pretest
 
 # Pertemuan Ke 16
-- Teori Menentukan Mobile Seluler Network
+- Teori Menentukan Mobile Seluler Networkk
