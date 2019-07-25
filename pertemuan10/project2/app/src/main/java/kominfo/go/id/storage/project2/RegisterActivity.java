@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 public class RegisterActivity extends AppCompatActivity {
-    EditText editUsername,editPassword,editEmail, editNamaLengkap,editAsalSekolah,editAlamat;
+    EditText editUsername, editPassword, editEmail, editNamaLengkap,editAsalSekolah,editAlamat;
     Button btnSimpan;
 
     @Override
@@ -49,12 +49,9 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     boolean isValidation(){
-        if (editUsername.getText().toString().equals("") ||
-                editPassword.getText().toString().equals("") ||
-                editEmail.getText().toString().equals("") ||
-                editNamaLengkap.getText().toString().equals("") ||
-                editAsalSekolah.getText().toString().equals("") ||
-                editAlamat.getText().toString().equals("")){
+        if (editUsername.getText().toString().equals("") || editPassword.getText().toString().equals("") ||
+                editEmail.getText().toString().equals("") || editNamaLengkap.getText().toString().equals("") ||
+                editAsalSekolah.getText().toString().equals("") || editAlamat.getText().toString().equals("")){
             return false;
         } else {
             return true;
@@ -62,12 +59,9 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     void simpanFileData(){
-        String isiFile = editUsername.getText().toString() + ";" +
-                editPassword.getText().toString() + ";" +
-                editEmail.getText().toString() + ";" +
-                editNamaLengkap.getText().toString() + ";" +
-                editAsalSekolah.getText().toString() + ";" +
-                editAlamat.getText().toString() ;
+        String isiFile = editUsername.getText().toString() + ";" + editPassword.getText().toString() + ";" +
+                editEmail.getText().toString() + ";" + editNamaLengkap.getText().toString() + ";" +
+                editAsalSekolah.getText().toString() + ";" + editAlamat.getText().toString() ;
         File file = new File(getFilesDir(),editUsername.getText().toString());
         FileOutputStream outputStream = null;
         try {

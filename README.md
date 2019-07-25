@@ -57,3 +57,5 @@ Membuat project menampilkan nama
 
 # Pertemuan Ke 16
 - Teori Menentukan Mobile Seluler Network
+
+Pertemuan Akhir
